@@ -1,9 +1,14 @@
+body
+  background-color: #3D3D3D
+
 .conatiner
   margin: 0 auto
   width: 100%
+
 h1
   text-align: center
   color: violet
+
 .images
   display: flex
   flex-wrap: wrap
@@ -14,7 +19,22 @@ h1
 
 .image
   width: 30%
-  margin: 16.66
+  /*height: 30%*/
+
+/*.image:nth-child(odd)
+  background-color: #EB3AF0*/
+
+/*.image:nth-child(even)
+  background-color: #82F774*/
 
 img
   width: 100%
+  /*opacity: .5*/
+
+@media screen and (min-device-width: 0px) and (max-device-width: 360px) 
+  .image 
+    width: 100%
+
+@media screen and (min-device-width: 361px) and (max-device-width: 800px) 
+  .image 
+    width: 45%
